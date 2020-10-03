@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack/Babel-demo</title>
+</head>
+
+<body>
+  <ul id="menu" class="header">
+    <li><a href="" id="about">About</a></li>
+    <li><a href="" id="ex1">Ex1</a></li>
+    <li><a href="" id="ex2">Ex2</a></li>
+    <li><a href="" id="ex3">Ex3</a></li>
+  </ul>
+
+  <div class="content">
+
+    <!-- This is were you should place your basic HTML for exercise-1 -->
+    <div id="ex1_html" style="display:none;">
+      <h3>Exercise 1</h3>
+      <p>Add your basic HTML for Exercise 1 here</p>
+      <ul id="jokes"></ul>
+      
+      <input id="findMedID" class="form-control col-md-3" type="text" placeholder="Skriv joke ID">
+      <button id="findMedIDbtn" class="btn btn-primary"> Get joke </button>
+      <p id="jokeFundet"></p>
+
+      <input id="nyJoke" class="form-control col-md-3" type="text" placeholder="Skriv ny joke">
+      <button id="addJoke" class="btn btn-primary"> Add joke </button>
+
+
+    </div>
+    
+    <!-- End of HTML for exercise-1 -->
+
+
+
+    <!-- This is were you should place your basic HTML for exercise-2 -->
+    <div id="ex2_html" style="display:none;">
+      <h3>Exercise 2</h3>
+      <p>Add your basic HTML for Exercise 2 here</p>
+
+      <button id="hej" class="btn btn-primary"> Quote </button>
+      <p id="farvel"></p>
+
+    </div>
+    <!-- End of HTML for exercise-1 -->
+
+
+    <!-- This is were you should place your basic HTML for exercise-3 -->
+    <div id="ex3_html" style="display:none;">
+      <h3>Ex-3</h3>
+      <p>Add your basic HTML for Exercise 3 here</p>
+
+      <div class="row" style="min-height: 5em;"">
+      <div class="col-md-8 pre-scrollable" style="background-color: lightgrey;">
+        <h5>All Users</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Age</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Email</th>
+          </thead>
+          <tbody id="allUserRows">
+          <tbody>
+        </table>
+      </div>
+      <div class="col-md-4" style="background-color: powderblue;">
+        <h5>Find User</h5>
+        <input id="findBMedID" class="form-control col-md-3" type="text" placeholder="Skriv bruger ID">
+        <button id="findBMedIDbtn" class="btn btn-primary"> Get user </button>
+        <p id="brugerFundet"></p>
+      </div>
+    </div>
+    <div class="row" style="min-height: 5em;">
+      <div class="col-md-4" style="background-color: powderblue;">
+        <h5>Add User</h5>
+        <input id="nyBrugerAge" class="form-control col-md-3" type="text" placeholder="Skriv alder">
+        <input id="nyBrugerName" class="form-control col-md-3" type="text" placeholder="Skriv navn">
+        <input id="nyBrugerGender" class="form-control col-md-3" type="text" placeholder="male / female">
+        <input id="nyBrugerEmail" class="form-control col-md-3" type="text" placeholder="Skriv E-mail">
+        <button id="addUser" class="btn btn-primary"> Tilføj bruger </button>
+  
+      </div>
+      <div class="col-md-4" style="background-color: lightgrey;">
+        <h5>Edit User</h5>
+        <p>Skriv id'et på brugeren du vil redigere</p>
+        <input id="redBrugerID" class="form-control col-md-3" type="text" placeholder="Skriv id">
+        <hr>
+        <input id="redBrugerAge" class="form-control col-md-3" type="text" placeholder="Ny alder">
+        <input id="redBrugerName" class="form-control col-md-3" type="text" placeholder="Nyt navn">
+        <input id="redBrugerGender" class="form-control col-md-3" type="text" placeholder="male / female">
+        <input id="redBrugerEmail" class="form-control col-md-3" type="text" placeholder="Ny E-mail">
+        <button id="redUser" class="btn btn-primary"> Rediger bruger </button>
+      </div>
+      <div class="col-md-4" style="background-color: powderblue;">
+        <h5>Delete User</h5>
+        <p>Skriv id'et på brugeren du vil slette</p>
+        <input id="delBrugerID" class="form-control col-md-3" type="text" placeholder="Skriv id">
+        <button id="deleteUser" class="btn btn-primary"> Slet bruger </button>
+      </div>
+    </div>
+  </div>
+  <!-- End of HTML for exercise-3 -->
+
+  <!---- HTML for the About page -->
+  <div id="about_html" style="display:none;">
+    <h3>About</h3>
+    <p>Watch the small video given as intro to this code, BEFORE you start using it</p>
+  </div>
+  <!-- End of HTML for ABOUT Page -->
+
+  </div>
+
+  <!-- #################################################################-->
+  <!-- IMPORTANT  DO NOT IMPORT ANY JavaScript in this file by YOURSELF -->
+  <!-- #################################################################-->
+
+</body>
+
+</html>
